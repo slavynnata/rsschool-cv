@@ -1,1 +1,62 @@
+/* @import url ('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;300;400;500&display=swap') */
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primery-color: #bd72a7;
+    --text-color: #181615;
+}
+html {
+    font-size: 14px;
+}
+body{
+    font-family: Chivo+Mono, sans-serif;
+    background-color: white;
+    color: black
+}
+
+/* common style */
+img {
+    width: 100%
+}
+a {
+    text-decoration: none;
+    color: rgb(180, 57, 57);
+}
+
+/*layouts */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #181615;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px){
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+/* profile */
+.profile_container {
+    display: flex;
+    gap: 2 rem;
+}
+.profile_profileImg {
+max-width: 250px;
+}
+/* .profile */
